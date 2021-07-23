@@ -1,10 +1,9 @@
 require('dotenv').config()
 /*
-
   PORT=5000
   NODE_ENV=development
-  DEV_DATABASE_URL='postgresql://postgres:password@localhost:5432/database_name'
-  TESTING_DATABASE_URL='postgresql://postgres:password@localhost:5432/testing_database_name'
+  DEV_DATABASE_URL=postgresql://postgres:password@localhost:5432/database_name
+  TESTING_DATABASE_URL=postgresql://postgres:password@localhost:5432/testing_database_name
 
   Put the above in your .env file. Some adjustments in the connection URLs will be needed:
 
@@ -13,7 +12,6 @@ require('dotenv').config()
     - password (in postgres:password, replace with the actual password of the postgres user)
     - database_name (use the real name of the development database you created in pgAdmin 4)
     - testing_database_name (use the real name of the testing database you created in pgAdmin 4)
-
 */
 const pg = require('pg')
 
